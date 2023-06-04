@@ -1,0 +1,19 @@
+{% extends "base.html"%}
+
+{%block title%}
+Complimentary Form
+{%endblock%}
+{%block content%}
+<div class="container">
+    <h1>Complimentary Form</h1>
+    <form action="/greet">
+        What's your name? <input type="text" name="username" placeholder="Your Name">
+        <label for="compliments">Do you want a compliment?</label>
+        <input type="checkbox" name="wants_compliments" id="compliments">
+        <button>Submit!</button>
+    </form>
+    <p><a href="/hello">Go to Hello Page</a></p>
+    <p><a href="/lucky">Get a lucky number</a></p>
+</div>
+
+{%endblock%}

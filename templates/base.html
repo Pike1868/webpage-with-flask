@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/static/css/main_style.css">
+    <link rel="icon" href="/static/images/LMlogo_greygold.png">
+    <title>{%block title%}{%endblock%}</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="/">Home</a>
+
+        <a href="/python-tips">Python Tips</a>
+        <a href="/flask-tips">Flask Tips</a>
+        <a href="/form">Example Form</a>
+        <a href="/lucky">Example Dynamic Page</a>
+    </nav>
+
+    <main class="container">{%block content%} {%endblock%}</main>
+    <footer>
+        <p>Feel free to connect with me!</p>
+        <ul class="footer-icons">
+            <li><a href="https://www.linkedin.com/in/luis-mendoza-l/"><i class="fab fa-linkedin fa-2x"></i></a></li>
+            <li><a href="https://github.com/Pike1868"><i class="fab fa-github fa-2x"></i></a></li>
+
+        </ul>
+    </footer>
+    <script src="https://kit.fontawesome.com/ae80a6d812.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

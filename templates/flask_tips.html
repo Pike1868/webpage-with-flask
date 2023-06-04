@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="flask-tips">
+    <h1 class="titles">Flask</h1>
+    <h2>Most used web frameworks among developers worldwide, as of 2022</h2>
+    <img id="python-graph-img" src="/static/images/flask-popularity-statista.png" alt="" srcset="">
+
+    <h2>Flask Tips</h2>
+    <ol>
+        <li>
+            <h3>Understand HTTP Methods</h3>
+            <p>Flask routes can handle different HTTP methods. Understand the difference between GET, POST, and others.
+            </p>
+        </li>
+        <li>
+            <h3>Use Flask's debugging mode</h3>
+            <p>Flask's debugging mode can provide useful information when an error occurs.</p>
+        </li>
+        <li>
+            <h3>Understand Jinja Templating</h3>
+            <p>Flask uses the Jinja2 template engine. It's important to understand how to use it to render dynamic
+                content on your web pages.</p>
+        </li>
+    </ol>
+</div>
+
+{% endblock %}

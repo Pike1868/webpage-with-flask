@@ -1,0 +1,79 @@
+{% extends "base.html"%}
+
+{%block title%}
+FlaskApp
+{%endblock%}
+{%block content%}
+<h1 class="titles">Welcome!</h1>
+<h2>Today's date is: {{date}}</h2>
+
+<div class="hero-container">
+    <img id="hero-image" src="/static/images/Flask_logo.png" alt="Hero Image">
+</div>
+<div id="intro">
+    <h3 class="titles">Project Introduction</h3>
+    <p>Hello! My name is Luis Mendoza and I'm a software engineer based in Atlanta, Georgia. This website is a
+        testament to my journey of learning and exploring Python and Flask. As I delve deeper into these powerful
+        tools, I wanted to create a space to share what I've learned and provide valuable resources for others on
+        the same path. Enjoy exploring and happy coding!</p>
+</div>
+
+<div id="about">
+    <h3 class="titles">About Flask</h3>
+    <p>
+        Flask is a lightweight, yet powerful web framework in Python that's designed to make getting
+        started quick and easy, with the ability to scale up to complex applications. It's classified as a "micro"
+        framework because it does not require particular tools or libraries. This bare-bones structure allows
+        developers a lot of freedom in how they structure their applications, but also places a lot of
+        responsibility on them to make decisions.
+    </p>
+    <p>
+        The simplicity of Flask is its ultimate strength. It allows developers to focus on the core functionality of
+        the application by taking care of all the backend details. Flask’s ready-to-use code structure saves
+        developers from the time-consuming task of writing boilerplate code. Furthermore, Flask is compatible with
+        other Python libraries, allowing developers to add more functionalities.
+    </p>
+</div>
+<div id="origin">
+    <h3 class="titles">Origin of Flask</h3>
+    <p>
+        Flask was created by <strong>Armin Ronacher in 2010</strong> as an April Fool's joke. He took components
+        from two of his other projects, Werkzeug and Jinja2, and packaged them into a single, easy-to-use
+        microframework.
+    </p>
+    <p> Despite its humorous origin, Flask has since become one of the most popular Python web frameworks, used by
+        many large-scale applications and businesses around the world.
+    </p>
+</div>
+<div id="project-ideas">
+    <h3 class="titles">Project Ideas for Flask</h3>
+    <ul>
+        <li>
+            <h4>Blog Site</h4>
+            <p>You can use Flask to create a personal blog where you share your thoughts, ideas, and creations. This is
+                a good project to practice handling databases and user authentication.</p>
+        </li>
+        <li>
+            <h4>To-Do List Application</h4>
+            <p>A simple but practical project where you can implement CRUD operations (Create, Read, Update, Delete).
+            </p>
+        </li>
+        <li>
+            <h4>E-commerce Site</h4>
+            <p>This is a complex project where you can integrate a lot of functionalities like user authentication,
+                payment processing, and handling complex database relationships.</p>
+        </li>
+        <li>
+            <h4>API</h4>
+            <p>Flask is great for creating RESTful APIs. You can create an API for a dataset or for some service that
+                you want to provide.</p>
+        </li>
+        <li>
+            <h4>Data Dashboard</h4>
+            <p>If you're interested in data analysis, you could use Flask to display interactive charts and graphs from
+                a dataset. This would require using Flask alongside a library like Plotly or Dash.</p>
+        </li>
+    </ul>
+</div>
+
+{%endblock%}

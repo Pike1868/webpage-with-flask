@@ -1,0 +1,26 @@
+{% extends "base.html"%}
+
+{%block title%}
+Greeter v2
+{%endblock%}
+{%block content%}
+<h1>Greetings {{username}}!</h1>
+<p>Todays Date is: {{date}}</p>
+
+{%if wants_compliments %}
+<img src="https://media.giphy.com/media/3i4xTtJQIJk0o/giphy.gif" alt="" srcset="">
+
+{%for compliment in nice_things%}
+<p>You are so {{compliment}}!</p>
+
+{%endfor%}
+{%else%}
+
+<p>You didn't want any compliments?</p>
+<img src="https://media.giphy.com/media/uN5iwZB2v2dH2/giphy.gif" alt="">
+
+{%endif%}
+
+
+
+{%endblock%}
